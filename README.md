@@ -14,7 +14,7 @@ Before you start using the API, read through the following five basics 👇
 GlideCX's API is provided on the following HTTPS-only domain:
 
 ```
-https://api.glidecx.com/user/v1/
+https://api.glidecx.com/user/v1
 ```
 
 ## 2️⃣ Authentication
