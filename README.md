@@ -57,7 +57,7 @@ We were unable to find anything matching your request.
 
 ### 429 Too Many Requests
 
-You reached a rate-limit of 100 API calls per minute.
+You reached a rate-limit of 200 API calls per minute.
 
 ## 5️⃣ Endpoints
 
@@ -126,10 +126,10 @@ Authorization: Bearer YOUR_API_KEY
 
 Query Parameters:
 
-* **source** google | facebook - omit field for all sources. The source can be found from the sources property when calling GET /businesses
-* **show_on_widget** - true | false - pull reviews that are marked as show on widget only
+* **source** `google` | `facebook` - omit field for all sources. The source can be found from the sources property when calling GET /businesses
+* **show_on_widget** - `true` | `false` - pull reviews that are marked as show on widget only
 * **location** add the location id to filter the reviews from specific location/business. The location id can be found from the id property when calling GET /businesses
-* **sort** - desc | asc - ordering of reviews
+* **sort** - `desc` | `asc` - ordering of reviews
 
 ### Response
 
@@ -204,6 +204,7 @@ Request Body:
 * **email, phone_number** - You can provider email and/or phone_number. We recommend providing both properties in channel. However, you need to provide at least one.
 * **location** - Obtain this ID from the GET /businesses query or from the URL on the location page.
 * **campaign** - Obtain this ID from the URL on the campaigns page.
+* **resend_invite** - `true` | `false` Resend the invite if an invitation has already been sent to the requested contact. Default value is `false`
 
 ### Response
 
