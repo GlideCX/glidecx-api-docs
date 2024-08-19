@@ -35,7 +35,7 @@ Make sure you pass the entire key without any spaces or extra symbols.
 
 ## 3️⃣ Rate limiting
 
-In order to protect GlideCX from API traffic spikes that could put our database at risk we utilise rate-limiting. When you get rate-limited, you will start receiving ***429 Too Many Requests*** HTTP errors in response to your requests.
+In order to protect GlideCX from API traffic spikes that could put our database at risk we utilise rate-limiting. When you get rate-limited, you will start receiving **429 Too Many Requests** HTTP errors in response to your requests.
 
 The default overall requests limit is **200 per minute**
 
@@ -49,7 +49,7 @@ The request could not be understood by GlideCX's server due to malformed syntax 
 
 ### 401 Unauthorized
 
-This means that something is wrong with your API key or it's not added to the request headers at all. Make sure you pass it as described in the ***Authentication*** section above.
+This means that something is wrong with your API key or it's not added to the request headers at all. Make sure you pass it as described in the **Authentication** section above.
 
 ### 404 Not Found
 
