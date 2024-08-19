@@ -35,7 +35,7 @@ Make sure you pass the entire key without any spaces or extra symbols.
 
 ## 3️⃣ Rate limiting
 
-In order to protect Cloutly from API traffic spikes that could put our database at risk we utilise rate-limiting. When you get rate-limited, you will start receiving ***429 Too Many Requests*** HTTP errors in response to your requests.
+In order to protect GlideCX from API traffic spikes that could put our database at risk we utilise rate-limiting. When you get rate-limited, you will start receiving ***429 Too Many Requests*** HTTP errors in response to your requests.
 
 The default overall requests limit is ***200 per minute***
 
@@ -65,7 +65,7 @@ Here's the list of all available endpoints you can use to access and control you
 
 ## ✅ GET /businesses
 
-Get list of businesses (locations) and sources connected to this Cloutly account.
+Get list of businesses (locations) and sources connected to this GlideCX account.
 
 ### Request
 
