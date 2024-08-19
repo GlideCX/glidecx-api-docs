@@ -128,7 +128,7 @@ Query Parameters:
 
 * ***source*** google | facebook - omit field for all sources. The source can be found from the sources property when calling GET /businesses
 * ***show_on_widget*** - true | false - pull reviews that are marked as show on widget only
-* ***location** add the location id to filter the reviews from specific location/business. The location id can be found from the id property when calling GET /businesses
+* ***location*** add the location id to filter the reviews from specific location/business. The location id can be found from the id property when calling GET /businesses
 * ***sort*** - desc | asc - ordering of reviews
 
 ### Response
@@ -157,11 +157,86 @@ Query Parameters:
 }
 ```
 
-Notes: 
+**Notes:** 
 
 * ***reviews*** is ordered by published_at: desc, which means the latest review will always be at the beginning of the list.
 * Most fields a nullable so remember to unwrap fields if you are expecting a required value
 * The `...` indicates that new fields may be added over time.
 * We will consider changing field names or removing fields to be a breaking change and will publish a new version (V2 in this case).
 
+## ✅ GET /POST /send-review-invite
 
+Send a review invite to your customer. This will add a contact to a review campaign in GlideCX. **Note:** you need to have a business (location) and campaign already setup and preconfigured in the dashboard first.
+
+### Request
+
+URL:
+
+```
+POST https://api.glidecx.com/user/api/v1/send-review-invite
+```
+
+Headers:
+
+```
+Authorization: Bearer YOUR_API_KEY
+```
+
+Query Parameters:
+
+N/A
+
+Request Body:
+
+```
+{
+    "first_name": "John",
+    "last_name": "Smith",
+    "email": "useremail@gmail.com",
+    "phone_number": "+4412121341321",
+    "location": "41f92685-9f7d-4e81-9a9f-0f9613db2c8e",
+    "campaign": "23086baa-d744-4c44-ae1b-1afdbd9de149",
+    "resend_invite": false
+}
+```
+
+* **first_name and last_name** provide both the first_name and last_name of the contact.
+* **email, phone_number** - You can provider email and/or phone_number. We recommend providing both properties in channel. However, you need to provide at least one.
+* location - Obtain this ID from the GET /businesses query or from the URL on the location page.
+* campaign - Obtain this ID from the URL on the campaigns page.
+
+### Response
+
+```
+{
+    "contact": {
+        "id": "d610fc10-6121-4b5f-abe0-14616e5ae712",
+        "first_name": "John",
+        "last_name": "Smith",
+        "email": "useremail@gmail.com",
+        "phone_number": "+4412121341321",
+        "campaign": "Review Campaign 2",
+        "location": "PK - Fazal Din's Pharma Plus",
+        "updated_at": "2024-08-19T05:14:12.004072Z",
+        "created_at": "2024-08-18T23:53:53.526589Z"
+    },
+    "usage": {
+        "sms_limits_left": 760,
+        "renews": "2024-08-20T17:27:08Z"
+    }
+}
+```
+
+Notes:
+
+### Example of how to find location or business ID
+
+[Put the image here]
+
+Example of how to find campaign ID
+
+[Put the image here]
+
+If you have any questions regarding the REST API, feel free to chat us any time.
+
+**Updated on:** 21/02/2024
