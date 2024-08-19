@@ -238,7 +238,7 @@ Example of how to find campaign ID
 
 [Put the image here]
 
-If you have any questions regarding the REST API, feel free to chat us any time.
+If you have any questions regarding the REST API, feel free to [contact us](https://www.glidecx.com/contact-us/) any time.
 
 
 **Updated on:** 21/02/2024
