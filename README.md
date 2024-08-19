@@ -14,7 +14,7 @@ Before you start using the API, read through the following five basics 👇
 GlideCX's API is provided on the following HTTPS-only domain:
 
 ```
-https://api.glidecx.com/user/api/v1/
+https://api.glidecx.com/user/v1/
 ```
 
 ## 2️⃣ Authentication
@@ -72,7 +72,7 @@ Get list of businesses (locations) and sources connected to this GlideCX account
 URL:
 
 ```
-GET https://api.glidecx.com/user/api/v1/businesses
+GET https://api.glidecx.com/user/v1/businesses
 ```
 
 Headers:
@@ -115,7 +115,7 @@ Pull a list of reviews for all your connected sources in GlideCX. Note: you need
 URL:
 
 ```
-GET https://api.glidecx.com/user/api/v1/reviews
+GET https://api.glidecx.com/user/v1/reviews
 ```
 
 Headers:
@@ -173,7 +173,7 @@ Send a review invite to your customer. This will add a contact to a review campa
 URL:
 
 ```
-POST https://api.glidecx.com/user/api/v1/send-review-invite
+POST https://api.glidecx.com/user/v1/send-review-invite
 ```
 
 Headers:
