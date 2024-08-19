@@ -128,7 +128,7 @@ Query Parameters:
 
 * **source** `google` | `facebook` - omit field for all sources. The source can be found from the sources property when calling GET /businesses
 * **show_on_widget** - `true` | `false` - pull reviews that are marked as show on widget only
-* **location** add the location id to filter the reviews from specific location/business. The location id can be found from the id property when calling GET /businesses
+* **location_id** add the location id to filter the reviews from specific location/business. The location id can be found from the id property when calling GET /businesses
 * **sort** - `desc` | `asc` - ordering of reviews
 
 ### Response
@@ -194,16 +194,16 @@ Request Body:
     "last_name": "Smith",
     "email": "useremail@gmail.com",
     "phone_number": "+4412121341321",
-    "location": "41f92685-9f7d-4e81-9a9f-0f9613db2c8e",
-    "campaign": "23086baa-d744-4c44-ae1b-1afdbd9de149",
+    "location_id": "41f92685-9f7d-4e81-9a9f-0f9613db2c8e",
+    "campaign_id": "23086baa-d744-4c44-ae1b-1afdbd9de149",
     "resend_invite": false
 }
 ```
 
 * **first_name and last_name** provide both the first_name and last_name of the contact.
 * **email, phone_number** - You can provider email and/or phone_number. We recommend providing both properties in channel. However, you need to provide at least one.
-* **location** - Obtain this ID from the GET /businesses query or from the URL on the location page.
-* **campaign** - Obtain this ID from the URL on the campaigns page.
+* **location_id** - Obtain this ID from the GET /businesses query or from the URL on the location page.
+* **campaign_id** - Obtain this ID from the URL on the campaigns page.
 * **resend_invite** - `true` | `false` Resend the invite if an invitation has already been sent to the requested contact. Default value is `false`
 
 ### Response
