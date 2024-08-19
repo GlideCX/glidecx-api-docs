@@ -92,6 +92,7 @@ N/A
   {
     "id": "41f92685-9f7d-4e81-9a9f-0f9613db2c8e",
     "location_name": "My Business Name",
+    "location_slug": "fazal-dins-pharma-plus",
     "display_location_name": "US - My Business Name",
     "logo_url": "LOCATION_LOGO_IMAGE",
     "cover_url": "LOCATION_COVER_IMAGE",
@@ -104,3 +105,63 @@ N/A
   }
 ]
 ```
+
+## ✅ GET /reviews
+
+Pull a list of reviews for all your connected sources in GlideCX. Note: you need to connect the source as an integration in the dashboard first.
+
+### Request
+
+URL
+
+```
+GET https://api.glidecx.com/user/api/v1/reviews
+```
+
+Headers
+
+```
+Authorization: Bearer YOUR_API_KEY
+```
+
+Query Parameters:
+
+* ***source*** google | facebook - omit field for all sources. The source can be found from the sources property when calling GET /businesses
+* ***show_on_widget*** - true | false - pull reviews that are marked as show on widget only
+* ***location** add the location id to filter the reviews from specific location/business. The location id can be found from the id property when calling GET /businesses
+* ***sort*** - desc | asc - ordering of reviews
+
+### Response
+
+```
+{
+    "count": 21,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": "d18e20e5-9db7-47e8-906b-2e9bf88b81e7",
+            "source": "google",
+            "show_on_widget": true,
+            "author_name": "David Alexander",
+            "profile_photo_url": "review_author_image",
+            "rating": 5.0,
+            "review_text": "here review text will be displayed",
+            "is_responded": false,
+            "published_at": "2020-08-15T15:55:12.771374Z",
+            "created_at": "2024-08-15T15:55:12.771612Z",
+            "updated_at": "2024-08-15T15:55:12.771616Z",
+            ...
+        },
+    ]
+}
+```
+
+Notes: 
+
+* ***reviews*** is ordered by published_at: desc, which means the latest review will always be at the beginning of the list.
+* Most fields a nullable so remember to unwrap fields if you are expecting a required value
+* The `...` indicates that new fields may be added over time.
+* We will consider changing field names or removing fields to be a breaking change and will publish a new version (V2 in this case).
+
+
