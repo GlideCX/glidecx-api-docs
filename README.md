@@ -202,8 +202,8 @@ Request Body:
 
 * **first_name and last_name** provide both the first_name and last_name of the contact.
 * **email, phone_number** - You can provider email and/or phone_number. We recommend providing both properties in channel. However, you need to provide at least one.
-* location - Obtain this ID from the GET /businesses query or from the URL on the location page.
-* campaign - Obtain this ID from the URL on the campaigns page.
+* **location** - Obtain this ID from the GET /businesses query or from the URL on the location page.
+* **campaign** - Obtain this ID from the URL on the campaigns page.
 
 ### Response
 
