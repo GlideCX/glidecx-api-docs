@@ -13,7 +13,9 @@ Before you start using the API, read through the following five basics 👇
 
 GlideCX's API is provided on the following HTTPS-only domain:
 
-```https://api.glidecx.com/user/api/v1/```
+```
+https://api.glidecx.com/user/api/v1/
+```
 
 ## 2️⃣ Authentication
 
@@ -23,7 +25,9 @@ To get your API key, go to Account → API Keys and copy your API Key from there
 
 [Screenshot coming soon]
 
-```Authorization: Bearer YOUR_API_KEY```
+```
+Authorization: Bearer YOUR_API_KEY
+```
 
 You don't need to do any extra manipulations with your API key. It is permanent and never expires until reset from the dashboard.
 
@@ -67,11 +71,15 @@ Get list of businesses (locations) and sources connected to this Cloutly account
 
 URL
 
-```GET https://api.glidecx.com/user/api/v1/businesses```
+```
+GET https://api.glidecx.com/user/api/v1/businesses
+```
 
 Headers
 
-```Authorization: Bearer YOUR_API_KEY```
+```
+Authorization: Bearer YOUR_API_KEY
+```
 
 Query Parameters
 
