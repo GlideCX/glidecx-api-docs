@@ -59,11 +59,11 @@ You reached a rate-limit of 100 API calls per minute.
 
 Here's the list of all available endpoints you can use to access and control your GlideCX data.
 
-## GET /businesses
+## ✅ GET /businesses
 
 Get list of businesses (locations) and sources connected to this Cloutly account.
 
-## Request
+### Request
 
 URL
 
@@ -77,3 +77,22 @@ Query Parameters
 
 N/A
 
+### Response
+
+```
+[
+  {
+    "id": "41f92685-9f7d-4e81-9a9f-0f9613db2c8e",
+    "location_name": "My Business Name",
+    "display_location_name": "US - My Business Name",
+    "logo_url": "LOCATION_LOGO_IMAGE",
+    "cover_url": "LOCATION_COVER_IMAGE",
+    "sources": [
+        "google",
+        "facebook",
+        "yelp"
+    ],
+    ...
+  }
+]
+```
