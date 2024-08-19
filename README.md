@@ -69,19 +69,19 @@ Get list of businesses (locations) and sources connected to this GlideCX account
 
 ### Request
 
-URL
+URL:
 
 ```
 GET https://api.glidecx.com/user/api/v1/businesses
 ```
 
-Headers
+Headers:
 
 ```
 Authorization: Bearer YOUR_API_KEY
 ```
 
-Query Parameters
+Query Parameters:
 
 N/A
 
@@ -112,13 +112,13 @@ Pull a list of reviews for all your connected sources in GlideCX. Note: you need
 
 ### Request
 
-URL
+URL:
 
 ```
 GET https://api.glidecx.com/user/api/v1/reviews
 ```
 
-Headers
+Headers:
 
 ```
 Authorization: Bearer YOUR_API_KEY
@@ -239,5 +239,6 @@ Example of how to find campaign ID
 [Put the image here]
 
 If you have any questions regarding the REST API, feel free to chat us any time.
+
 
 **Updated on:** 21/02/2024
