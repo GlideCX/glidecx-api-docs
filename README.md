@@ -37,7 +37,7 @@ Make sure you pass the entire key without any spaces or extra symbols.
 
 In order to protect GlideCX from API traffic spikes that could put our database at risk we utilise rate-limiting. When you get rate-limited, you will start receiving ***429 Too Many Requests*** HTTP errors in response to your requests.
 
-The default overall requests limit is ***200 per minute***
+The default overall requests limit is **200 per minute**
 
 ## 4️⃣ Errors
 
@@ -126,10 +126,10 @@ Authorization: Bearer YOUR_API_KEY
 
 Query Parameters:
 
-* ***source*** google | facebook - omit field for all sources. The source can be found from the sources property when calling GET /businesses
-* ***show_on_widget*** - true | false - pull reviews that are marked as show on widget only
-* ***location*** add the location id to filter the reviews from specific location/business. The location id can be found from the id property when calling GET /businesses
-* ***sort*** - desc | asc - ordering of reviews
+* **source** google | facebook - omit field for all sources. The source can be found from the sources property when calling GET /businesses
+* **show_on_widget** - true | false - pull reviews that are marked as show on widget only
+* **location** add the location id to filter the reviews from specific location/business. The location id can be found from the id property when calling GET /businesses
+* **sort** - desc | asc - ordering of reviews
 
 ### Response
 
@@ -157,14 +157,14 @@ Query Parameters:
 }
 ```
 
-**Notes:** 
+Notes: 
 
-* ***reviews*** is ordered by published_at: desc, which means the latest review will always be at the beginning of the list.
+* **reviews** is ordered by published_at: desc, which means the latest review will always be at the beginning of the list.
 * Most fields a nullable so remember to unwrap fields if you are expecting a required value
 * The `...` indicates that new fields may be added over time.
 * We will consider changing field names or removing fields to be a breaking change and will publish a new version (V2 in this case).
 
-## ✅ GET /POST /send-review-invite
+## ✅ POST /send-review-invite
 
 Send a review invite to your customer. This will add a contact to a review campaign in GlideCX. **Note:** you need to have a business (location) and campaign already setup and preconfigured in the dashboard first.
 
