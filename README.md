@@ -236,7 +236,7 @@ Notes:
 
 ### Example of how to find campaign ID
 
-![Finding Campaign ID](https://glidecx-website.s3.amazonaws.com/api-docs-images/find_location_id.webp)
+![Finding Campaign ID](https://glidecx-website.s3.amazonaws.com/api-docs-images/find_location_id1.webp)
 
 If you have any questions regarding the REST API, feel free to [contact us](https://www.glidecx.com/contact-us/) any time.
 
