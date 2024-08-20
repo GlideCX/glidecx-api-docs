@@ -232,7 +232,7 @@ Notes:
 
 ### Example of how to find location or business ID
 
-[Put the image here]
+![Finding Campaign ID](https://glidecx-website.s3.amazonaws.com/api-docs-images/campaign_id_image.webp)
 
 ### Example of how to find campaign ID
 
