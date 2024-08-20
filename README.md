@@ -23,7 +23,7 @@ You should authenticate all your HTTP requests to GlideCX's API with the help of
 
 To get your API key, go to Account → API Keys and copy your API Key from there.
 
-![Finding API Key](https://glidecx-website.s3.amazonaws.com/api-docs-images/finding_api_key.webp)
+![Finding API Key](https://glidecx-website.s3.amazonaws.com/api-docs-images/finding_api_key1.webp)
 
 ```
 Authorization: Bearer YOUR_API_KEY
