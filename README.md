@@ -234,7 +234,7 @@ Notes:
 
 [Put the image here]
 
-Example of how to find campaign ID
+### Example of how to find campaign ID
 
 [Put the image here]
 
